@@ -1,4 +1,9 @@
+body{
+    background-color: aqua;
+}
 .main-formular{
+    left: 30%;
+    right: 30%;
     background-color: aquamarine;
     padding: 0.5rem;
     font-family: sans-serif;
@@ -15,7 +20,7 @@ form{
     margin: 1rem;
 }
 input, button{
-padding: 0.5rem;
+padding: 10px 10px;
 margin: 0.2rem;
 }
 
