@@ -15,12 +15,9 @@ formButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     // trim whitespace fra navn
-    let myTrimmedName = formFirstName.value.trim();
+    // let myTrimmedName = formFirstName.value.trim();
 
-
-
-
-    if (myTrimmedName.length > 2 && validateEmail(formEmail.value)) {
+    if (formFirstName.length > 2 && formLastName.length > 2 &&  formAddress.length > 5 && validateEmail(formEmail.value)) {
         console.log('formen er udfyldt korrekt');
 
         formParent.innerHTML = '<h2>tak for tilmeldingen</h2><p>Jeg ejer din email nu HAAAAA haha</p>';
