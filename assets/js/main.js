@@ -9,10 +9,10 @@ const formButton = document.getElementById('myButton');
 
 
 
-formButton.addEventListener('click', (e) => {
+formButton.addEventListener('click', (event) => {
 
     // formen bruger ikke sin default som giver page reload
-    e.preventDefault();
+    event.preventDefault();
 
     // trim whitespace fra navn
     let myTrimmedName = formFirstName.value.trim();

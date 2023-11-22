@@ -1,34 +1,43 @@
-body{
-    background-color: aqua;
+body {
+    background-color: black;
+    max-width: 1200px;
+    margin: auto;
 }
-.main-formular{
-    left: 30%;
-    right: 30%;
-    background-color: aquamarine;
+
+.main-formular {
+    position: relative;
+    top: 10rem;
+    background-color: rgba(127, 255, 212, 0.335);
     padding: 0.5rem;
     font-family: sans-serif;
+    max-width: 600px;
+    margin: auto;
 }
-.main-formular h2{
+
+.main-formular h2 {
     display: flex;
     justify-content: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
-    margin: 1rem;
-}
-input, button{
-padding: 10px 10px;
-margin: 0.2rem;
 }
 
-.fullname{
+input {
+    padding: 10px 10px;
+    margin: 0.2rem;
+}
+
+button{
+    display: block;
+}
+
+.fullname {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .errorMarking {
     border: 2px solid red;
-  }
+}
