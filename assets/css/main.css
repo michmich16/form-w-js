@@ -1,0 +1,25 @@
+.main-formular{
+    background-color: aquamarine;
+    padding: 0.5rem;
+    font-family: sans-serif;
+}
+.main-formular h2{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    margin: 1rem;
+}
+input, button{
+padding: 0.5rem;
+margin: 0.2rem;
+}
+
+.fullname{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
