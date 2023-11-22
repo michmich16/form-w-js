@@ -28,3 +28,7 @@ margin: 0.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.errorMarking {
+    border: 2px solid red;
+  }
