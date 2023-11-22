@@ -19,18 +19,17 @@ formButton.addEventListener('click', (event) => {
 
     if (formFirstName.length > 2 && formLastName.length > 2 &&  formAddress.length > 5 && validateEmail(formEmail.value)) {
         console.log('formen er udfyldt korrekt');
-
-        formParent.innerHTML = '<h2>tak for tilmeldingen</h2><p>Jeg ejer din email nu HAAAAA haha</p>';
+        formParent.innerHTML = '<h2>tak for informationen</h2>';
 
         /*   let myResponseElement = document.createElement('h2');
           myResponseElement.innerText = 'tak for tilmeldingen';
   
-          formParent.appendChild(myResponseElement); */
+        //   formParent.appendChild(myResponseElement); */
 
     } else {
 
         // name evaluation
-        if (myTrimmedName.length > 2) {
+        if (formFirstName.length >= 2) {
 
 
         } else {
@@ -44,6 +43,12 @@ formButton.addEventListener('click', (event) => {
             formFirstName.classList.toggle('errorMarking');
 
         }
+        if (formLastName.length >= 2){
+
+        } else {
+            console.log('name er IKKE ok');
+            formLastName.classList.toggle('errorMarking');
+        }
 
 
         // email validation
@@ -52,6 +57,7 @@ formButton.addEventListener('click', (event) => {
         } else {
             console.log('email er IKKE ok');
             alert('email er IKKE ok');
+            formEmail.classList.toggle('errorMarking');
         }
 
     }
