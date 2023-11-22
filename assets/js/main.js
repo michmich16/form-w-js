@@ -7,10 +7,12 @@ const formZip = document.getElementById('zipCode');
 const formEmail = document.getElementById('myEmail');
 const formButton = document.getElementById('myButton');
 
-formButton.addEventListener('click', (event) => {
+
+
+formButton.addEventListener('click', (e) => {
 
     // formen bruger ikke sin default som giver page reload
-    event.preventDefault();
+    e.preventDefault();
 
     // trim whitespace fra navn
     let myTrimmedName = formFirstName.value.trim();
@@ -19,7 +21,7 @@ formButton.addEventListener('click', (event) => {
 
 
     if (myTrimmedName.length > 2 && validateEmail(formEmail.value)) {
-        console.log('formen er ydfyldt korrekt');
+        console.log('formen er udfyldt korrekt');
 
         formParent.innerHTML = '<h2>tak for tilmeldingen</h2><p>Jeg ejer din email nu HAAAAA haha</p>';
 
